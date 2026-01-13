@@ -1,6 +1,6 @@
 # --- Melanoma Outlier & Influence Analysis Script ---
-# Author: Research Team
-# Date: Jan 2024
+# Author: Lazaros vouzas
+# Date: Jan 2026
 
 # Φόρτωση απαραίτητων εργαλείων
 libs <- c("MASS", "FNN", "dplyr", "survival", "flexsurv", "survminer")
@@ -138,5 +138,6 @@ report_fht <- raw_data %>%
   arrange(desc(abs(pit_val - 0.5)))
 
 write.csv(report_fht, "fht_outliers_profile.csv", row.names = FALSE)
+
 
 cat("Ανάλυση ολοκληρώθηκε. Τα αρχεία αποθηκεύτηκαν επιτυχώς.\n")
