@@ -1,0 +1,45 @@
+"cases.submitter_id","hospital","demographic.gender","diagnoses.age_at_diagnosis","time","event","demographic.race","demographic.ethnicity","had_pharmaceutical","had_radiation","had_chemotherapy","had_immunotherapy","had_surgery","pit_val"
+"TCGA-HR-A5NC","HR","female",32872,0.1,0,"not reported","not reported","1","0","0","0","0",4.51751562491332e-07
+"TCGA-FR-A726","FR","male",32872,0.1,1,"white","not hispanic or latino","0","1","0","0","0",4.51751562491332e-07
+"TCGA-XV-A9VZ","XV","female",32872,0.1,0,"white","not hispanic or latino","0","1","0","0","0",4.51751562491332e-07
+"TCGA-EB-A41A","EB","male",32872,0.1,0,"white","not hispanic or latino","0","1","0","0","0",4.51751562491332e-07
+"TCGA-RP-A690","RP","female",24450,6,0,"white","not hispanic or latino","0","1","0","0","0",0.000170288674935848
+"TCGA-HR-A2OG","HR","female",21767,7,0,"not reported","not reported","0","1","0","0","0",0.000212895426196957
+"TCGA-RP-A693","RP","male",28394,10,0,"white","not hispanic or latino","1","0","0","0","0",0.000356895376534383
+"TCGA-BF-A1PV","BF","female",27124,14,0,"white","Unknown","1","0","0","0","0",0.000580989359298956
+"TCGA-EB-A82C","EB","female",25863,17,0,"asian","not hispanic or latino","0","1","0","0","0",0.00076958852210729
+"TCGA-GF-A2C7","GF","male",17545,21,0,"white","not hispanic or latino","1","0","0","0","0",0.00104497232804912
+"TCGA-RP-A694","RP","male",26044,21,0,"white","not hispanic or latino","0","1","0","0","0",0.00104497232804912
+"TCGA-EB-A3HV","EB","male",13712,39,0,"white","not hispanic or latino","0","1","0","0","0",0.00255844307603459
+"TCGA-GF-A6C8","GF","female",22767,62,0,"white","not hispanic or latino","0","1","0","0","0",0.00499592117053682
+"TCGA-EE-A29L","EE","male",28879,79,1,"white","not hispanic or latino","0","0","0","0","1",0.0070823812416021
+"TCGA-EB-A44O","EB","male",25597,81,0,"white","not hispanic or latino","1","0","0","0","0",0.00734172110968223
+"TCGA-D9-A1JW","D9","male",30152,111,0,"white","not hispanic or latino","0","1","0","0","0",0.0115404112397716
+"TCGA-W3-AA1O","W3","male",31382,122,1,"white","not hispanic or latino","0","0","1","0","0",0.0132112758000652
+"TCGA-EB-A3Y6","EB","female",20605,126,0,"white","not hispanic or latino","0","1","0","0","0",0.0138347203717626
+"TCGA-EE-A185","EE","female",20320,151,1,"white","not hispanic or latino","0","1","0","0","0",0.0179087462601496
+"TCGA-EB-A3XE","EB","female",28148,180,0,"white","not hispanic or latino","0","1","0","0","0",0.0229805818088824
+"TCGA-D9-A4Z2","D9","male",18542,190,1,"white","not hispanic or latino","1","0","0","0","0",0.0248067697655395
+"TCGA-ER-A19J","ER","male",19831,196,1,"white","not hispanic or latino","1","0","0","0","0",0.0259201668710241
+"TCGA-EB-A44N","EB","male",21785,205,1,"white","not hispanic or latino","0","1","0","0","0",0.0276141809949247
+"TCGA-YD-A89C","YD","female",16006,210,0,"white","not hispanic or latino","0","1","0","0","0",0.02856732682131
+"TCGA-EB-A5VV","EB","female",27562,214,0,"white","not hispanic or latino","0","1","0","0","0",0.0293358614408632
+"TCGA-D9-A1JX","D9","female",29518,216,1,"white","not hispanic or latino","1","0","0","0","0",0.0297221016853957
+"TCGA-D9-A4Z5","D9","male",24979,218,0,"white","not hispanic or latino","0","1","0","0","0",0.0301096415023495
+"TCGA-QB-A6FS","QB","male",18325,220,0,"white","not hispanic or latino","0","1","0","0","0",0.030498469275259
+"TCGA-EB-A553","EB","male",22972,226,0,"white","not hispanic or latino","0","1","0","0","0",0.0316725661540138
+"TCGA-FS-A1Z7","FS","male",7429,237,1,"white","not hispanic or latino","1","0","0","0","0",0.0338539176682578
+"TCGA-EE-A17Z","EE","male",21109,263,1,"white","not hispanic or latino","0","1","0","0","0",0.0391492101998805
+"TCGA-EB-A550","EB","female",27556,264,1,"white","not hispanic or latino","0","0","0","0","0",0.0393565761830708
+"TCGA-ER-A19T","ER","male",18850,270,1,"white","not hispanic or latino","0","1","0","0","0",0.0406062595008641
+"TCGA-WE-A8ZR","WE","male",18177,274,1,"white","not hispanic or latino","0","1","0","0","0",0.0414445259871439
+"TCGA-EB-A3XF","EB","male",20910,278,0,"white","not hispanic or latino","1","0","0","0","0",0.042286825996943
+"TCGA-ER-A199","ER","female",31780,279,1,"white","not hispanic or latino","0","1","0","0","0",0.0424980231512019
+"TCGA-BF-A1PX","BF","male",20626,282,1,"white","not hispanic or latino","0","1","0","0","0",0.0431330907595205
+"TCGA-D3-A3MO","D3","male",17472,284,1,"white","not hispanic or latino","1","0","0","0","0",0.0435576887676546
+"TCGA-EB-A41B","EB","female",27998,291,0,"white","not hispanic or latino","1","0","0","0","0",0.0450513346391738
+"TCGA-FS-A1ZG","FS","female",22392,295,1,"white","not hispanic or latino","1","0","0","0","0",0.0459100244201932
+"TCGA-D9-A6E9","D9","female",27537,301,0,"white","not hispanic or latino","0","1","0","0","0",0.0472049500627685
+"TCGA-GF-A3OT","GF","female",21607,301,0,"white","not hispanic or latino","1","0","0","0","0",0.0472049500627685
+"TCGA-YG-AA3N","YG","male",24525,306,0,"Unknown","hispanic or latino","1","0","0","0","0",0.0482902373557865
+"TCGA-GN-A266","GN","male",16565,308,1,"white","not hispanic or latino","1","0","0","0","0",0.0487258969522478

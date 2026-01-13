@@ -1,0 +1,19 @@
+"hospital","diagnoses.age_at_diagnosis","demographic.gender","cases.submitter_id","Mahalanobis_Dist","kNN_Dist","is_outlier","time","event","demographic.race","demographic.ethnicity","had_pharmaceutical","had_radiation","had_chemotherapy","had_immunotherapy","had_surgery","flag_pathway"
+"WE",18177,"male","TCGA-WE-A8ZR",34.1829211491087,3.91866853082217,TRUE,274,1,"white","not hispanic or latino","0","1","0","0","0",TRUE
+"D3",25626,"male","TCGA-D3-A3BZ",31.524161297767,3.92557664115832,TRUE,3976,0,"white","hispanic or latino","1","0","0","0","0",TRUE
+"W3",26115,"male","TCGA-W3-A828",30.1672735282307,3.55685440636636,TRUE,3683,1,"white","not hispanic or latino","0","1","0","0","0",TRUE
+"D3",23702,"male","TCGA-D3-A51R",29.1316804343975,4.25119729513403,TRUE,1941,0,"white","not hispanic or latino","1","0","0","0","0",TRUE
+"EE",18529,"male","TCGA-EE-A2M5",28.1665643866003,3.57528857375817,TRUE,659,1,"white","not hispanic or latino","0","1","0","0","0",TRUE
+"D9",26004,"male","TCGA-D9-A6EA",27.0808522986231,3.35541172424382,TRUE,766,0,"white","not hispanic or latino","1","0","0","0","0",TRUE
+"FS",23862,"male","TCGA-FS-A1ZS",26.9723468571329,3.76595312776253,TRUE,4526,0,"white","not hispanic or latino","1","0","0","0","0",TRUE
+"3N",26663,"male","TCGA-3N-A9WB",26.5017055566453,3.98426075888775,TRUE,518,1,"white","not hispanic or latino","0","1","0","0","0",TRUE
+"GN",25209,"female","TCGA-GN-A8LL",25.5582515862163,3.37093082866245,TRUE,650,1,"white","not hispanic or latino","1","0","0","0","0",TRUE
+"GN",20902,"female","TCGA-GN-A262",25.2458706937898,3.739415750038,TRUE,4255,0,"white","not hispanic or latino","1","0","0","0","0",TRUE
+"XV",20058,"female","TCGA-XV-AB01",24.1486834044886,4.11530048310418,TRUE,403,0,"white","not hispanic or latino","0","1","0","0","0",TRUE
+"EE",21109,"male","TCGA-EE-A17Z",23.6073030825755,3.38542133783775,TRUE,263,1,"white","not hispanic or latino","0","1","0","0","0",TRUE
+"YD",28424,"male","TCGA-YD-A9TA",23.328244211731,3.51699843528258,TRUE,1496,0,"white","not hispanic or latino","0","1","0","0","0",TRUE
+"D3",24652,"male","TCGA-D3-A1Q5",22.7597671361243,3.72064434635525,TRUE,3424,1,"white","not hispanic or latino","0","1","0","0","0",TRUE
+"ER",28253,"male","TCGA-ER-A194",21.7681390540184,3.54346549981144,TRUE,1354,1,"white","not hispanic or latino","1","0","0","0","0",TRUE
+"EB",27562,"female","TCGA-EB-A5VV",20.9857906091022,3.6014894689019,TRUE,214,0,"white","not hispanic or latino","0","1","0","0","0",TRUE
+"ER",18850,"male","TCGA-ER-A19T",20.9386725469157,3.24910113027493,TRUE,270,1,"white","not hispanic or latino","0","1","0","0","0",TRUE
+"EB",15853,"female","TCGA-EB-A4IQ",20.5872095277523,3.43091691613032,TRUE,636,1,"asian","not hispanic or latino","0","1","0","0","0",TRUE
