@@ -15,6 +15,8 @@ The analysis follows a multi-layer framework to detect heterogeneity at differen
 * `pathway_outliers_18_clinical_profile.csv`: Detailed clinical profiles of the 18 identified biological outliers.
 * `cox_outliers_profile.csv`: Data on patients identified as outliers or influential cases in the Cox model.
 * `fht_outliers_profile.csv`: Patients identified as stochastic outliers (Early Deaths) via PIT residuals.
+* clinical_plus_melanoma_pathway_scores_hospital_first.csv: the sample file of 460 patients with demographic and pathways scores
+  
 
 ## Methodology
 
