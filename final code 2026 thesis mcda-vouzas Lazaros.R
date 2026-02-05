@@ -76,22 +76,32 @@ dfb_matrix <- residuals(fit_cox_final, type = "dfbeta")
 dfb_limit <- 2 / sqrt(nrow(dfb_matrix))
 raw_data$DFBETA_Outlier <- apply(abs(dfb_matrix), 1, function(val) any(val > dfb_limit))
 
-# --- 4. Parametric Analysis (FHT / AFT) | Στοχαστική και Παραμετρική Ανάλυση ---
-fit_llogis <- flexsurvreg(Surv(time, event) ~ MAPK_Score + CellCycle_Score + 
-                            ImmuneCheckpoint_Score + RTK_PI3K_Score + Metabolic_Score + 
-                            had_pharmaceutical + had_immunotherapy, 
-                          data = raw_data, dist = "llogis")
+# --- 4.1. Προσαρμογή του μοντέλου με τις 7 μεταβλητές ---
+fit_llogis_7 <- flexsurvreg(
+  Surv(time, event) ~ MAPK_Score + CellCycle_Score + 
+    ImmuneCheckpoint_Score + RTK_PI3K_Score + Metabolic_Score + 
+    had_pharmaceutical + had_immunotherapy, 
+  data = raw_data, 
+  dist = "llogis"
+)
 
-# PIT Residuals (Stochastic Outliers) | Υπόλοιπα PIT (Στοχαστικοί Outliers)
-s_estimates <- summary(fit_llogis, type = "survival", t = raw_data$time, tidy = TRUE)$est
-raw_data$pit_val <- 1 - s_estimates
-raw_data$flag_survival_param <- (raw_data$pit_val < 0.05 | raw_data$pit_val > 0.95)
+# --- 4.2. Εμφάνιση του κλασικού summary της flexsurv ---
+# Αυτό σου δίνει τα αποτελέσματα σε log-scale (τα beta)
+print(fit_llogis_7)
 
-# Hazard Plot | Οπτικοποίηση Στιγμιαίου Κινδύνου
-grid_t <- seq(1, quantile(raw_data$time, 0.95, na.rm = TRUE), length.out = 300)
-haz_data <- summary(fit_llogis, type = "hazard", t = grid_t, tidy = TRUE)
-plot(grid_t, haz_data$est, type = "l", col = "red", lwd = 2,
-     xlab = "Days", ylab = "Hazard Rate", main = "Log-Logistic Hazard Profile")
+# --- 4.3. Δημιουργία καθαρού πίνακα αποτελεσμάτων (R Data Frame) ---
+# Περιλαμβάνει τα Beta, τα Time Ratios (TR) και τα p-values
+results_table <- as.data.frame(fit_llogis_7$res)
+results_table$Variable <- rownames(results_table)
+
+# Υπολογισμός Time Ratios και P-values για τις συμμεταβλητές
+results_table <- results_table %>%
+  mutate(
+    Time_Ratio = ifelse(!Variable %in% c("shape", "scale"), exp(est), NA),
+    z_value = est / se,
+    p_value = 2 * (1 - pnorm(abs(z_value)))
+  ) %>%
+  select(Variable, est, Time_Ratio, se, p_value)
 
 # --- 5. Influence Analysis (LOO) | Ανάλυση Επιρροής Leave-One-Out ---
 n_total <- nrow(raw_data)
@@ -141,3 +151,4 @@ report_fht <- raw_data %>%
 write.csv(report_fht, "fht_outliers_profile.csv", row.names = FALSE)
 
 cat("Analysis complete. Reports exported successfully. | Η ανάλυση ολοκληρώθηκε επιτυχώς.\n")
+
